@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>陸上競技部短距離メンバー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #870606;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #aa0b0b;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        section {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            border-radius: 8px;
+        }
+        .member-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #fff1ee;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+        }
+
+        .member-text {
+           width: 65%;
+        }
+
+        .member-text table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .member-text th {
+            text-align: left;
+            padding: 5px;
+            width: 80px;
+        }
+
+        .member-text td {
+            padding: 5px;
+        }
+
+        .member-photo {
+            width: 30%;
+            text-align: center;
+        }
+
+        .member-photo img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 600px) {
+            .member-box {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .member-text, .member-photo {
+                width: 100%;
+            }
+
+            .member-photo {
+                margin-top: 15px;
+            }
+        }
+        .member-button {
+            padding: 15px 25px;
+            font-size: 18px;
+            background-color: #870606;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            }
+
+        .member-button:hover {
+            background-color: #003366;
+        }
+
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3列 */
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .member-grid button {
+            padding: 20px;
+            font-size: 18px;
+            background-color: #870606;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .member-grid button:hover {
+            background-color: #003366;
+            transform: scale(1.05);
+        }
+
+        /* スマホ対応 */
+        @media (max-width: 600px) {
+            .member-grid {
+                grid-template-columns: repeat(2, 1fr); /* スマホは2列 */
+            }
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>陸上競技部 短距離 メンバー</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">ホーム</a>
+        <a href="member.html">メンバー</a>
+    </nav>
+
+    <section>
+        <h2>メンバー一覧</h2>
+        <h3>院生</h3>
+        <div class="member-grid">
+            <button onclick="location.href='member1/yamada.html'">山田 太郎</button>
+            <button onclick="location.href='member1/suzuki.html'">鈴木 一郎</button>
+            <button onclick="location.href='member1/tanaka.html'">田中 次郎</button>
+            <button onclick="location.href='member1/sato.html'">佐藤 三郎</button>
+            <button onclick="location.href='member1/ito.html'">伊藤 四郎</button>
+            <button onclick="location.href='member1/kato.html'">加藤 五郎</button>
+        </div>
+
+        <h3>4回生</h3>
+        <div class="member-grid">
+            <button onclick="location.href='member74/yamada.html'">山田 太郎</button>
+            <button onclick="location.href='member74/suzuki.html'">鈴木 一郎</button>
+            <button onclick="location.href='member74/tanaka.html'">田中 次郎</button>
+            <button onclick="location.href='member74/sato.html'">佐藤 三郎</button>
+            <button onclick="location.href='member74/ito.html'">伊藤 四郎</button>
+            <button onclick="location.href='member74/kato.html'">加藤 五郎</button>
+        </div>
+
+        <h3>3回生</h3>
+        <div class="member-grid">
+            <button onclick="location.href='member75/yamada.html'">山田 太郎</button>
+            <button onclick="location.href='member75/suzuki.html'">鈴木 一郎</button>
+            <button onclick="location.href='member75/tanaka.html'">田中 次郎</button>
+            <button onclick="location.href='member75/sato.html'">佐藤 三郎</button>
+            <button onclick="location.href='member75/ito.html'">伊藤 四郎</button>
+            <button onclick="location.href='member75/kato.html'">加藤 五郎</button>
+        </div>
+
+        <h3>2回生</h3>
+        <div class="member-grid">
+            <button onclick="location.href='member76/yamada.html'">山田 太郎</button>
+            <button onclick="location.href='member76/suzuki.html'">鈴木 一郎</button>
+            <button onclick="location.href='member76/tanaka.html'">田中 次郎</button>
+            <button onclick="location.href='member76/sato.html'">佐藤 三郎</button>
+            <button onclick="location.href='member76/ito.html'">伊藤 四郎</button>
+            <button onclick="location.href='member76/kato.html'">加藤 五郎</button>
+        </div>
+
+        <h3>1回生</h3>
+        <div class="member-grid">
+            <button onclick="location.href='member77/yamada.html'">山田 太郎</button>
+            <button onclick="location.href='member77/suzuki.html'">鈴木 一郎</button>
+            <button onclick="location.href='member77/tanaka.html'">田中 次郎</button>
+            <button onclick="location.href='member77/sato.html'">佐藤 三郎</button>
+            <button onclick="location.href='member77/ito.html'">伊藤 四郎</button>
+            <button onclick="location.href='member77/kato.html'">加藤 五郎</button>
+        </div>
+
+
+    </section>
+
+
+</body>
+</html>
